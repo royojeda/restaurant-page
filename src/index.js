@@ -1,7 +1,5 @@
 import './input.css'
-import loadHomeContents from "./home.js"
-import loadMenuContents from "./menu.js"
-import loadContactContents from "./contact.js"
+import { home, menu, contact } from "./tabs.js"
 
 const addListeners = () => {
   const content = document.querySelector("#content")
@@ -16,17 +14,17 @@ const addListeners = () => {
   }
 
   homeButton.addEventListener("click", () => {
-    changeTab(loadHomeContents)
+    changeTab(home)
   })
 
   menuButton.addEventListener("click", () => {
-    changeTab(loadMenuContents)
+    changeTab(menu)
   })
 
   contactButton.addEventListener("click", () => {
-    changeTab(loadContactContents)
+    changeTab(contact)
   })
 }
 
-loadHomeContents()
+home()
 addListeners()
