@@ -1,30 +1,30 @@
-import './input.css'
+import "./input.css"
 import { home, menu, contact } from "./tabs.js"
 
-const addListeners = () => {
-  const content = document.querySelector("#content")
-  const homeButton = document.querySelector(".home")
-  const menuButton = document.querySelector(".menu")
-  const contactButton = document.querySelector(".contact")
+class Display {
+  static setupButtons() {
+    const homeButton = document.querySelector(".home")
+    this.linkElementToTab(homeButton, home)
 
-  const changeTab = (tabFunction) => {
-    content.innerHTML = ""
-    tabFunction()
-    addListeners()
+    const menuButton = document.querySelector(".menu")
+    this.linkElementToTab(menuButton, menu)
+
+    const contactButton = document.querySelector(".contact")
+    this.linkElementToTab(contactButton, contact)
   }
 
-  homeButton.addEventListener("click", () => {
-    changeTab(home)
-  })
+  static linkElementToTab(element, tab) {
+    element.addEventListener("click", () => {
+      this.loadTab(tab)
+    })
+  }
 
-  menuButton.addEventListener("click", () => {
-    changeTab(menu)
-  })
-
-  contactButton.addEventListener("click", () => {
-    changeTab(contact)
-  })
+  static loadTab(tabFunction) {
+    const content = document.querySelector("#content")
+    content.innerHTML = ""
+    tabFunction(content)
+    this.setupButtons()
+  }
 }
 
-home()
-addListeners()
+Display.loadTab(home)
