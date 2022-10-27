@@ -5,8 +5,8 @@ const home = (content) => {
   content.innerHTML = `
     <div class="w-screen h-screen flex flex-col items-center p-1 gap-1">
       <div class="w-full flex justify-center border rounded shadow p-2">
-        <div class="grid grid-cols-3 gap-10 w-full max-w-xs">
-          <button type="button" class="home border-neutral-200 p-2 font-semibold underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
+        <div class="grid grid-cols-3 gap-10 w-full max-w-sm">
+          <button type="button" class="home p-2 font-semibold underline underline-offset-4 decoration-4 decoration-orange-500 text-lg bg-neutral-200 rounded shadow border border-neutral-200">
             Home
           </button>
           <button type="button" class="menu border-neutral-200 p-2 hover:underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
@@ -39,11 +39,11 @@ const menu = (content) => {
   content.innerHTML = `
   <div class="w-screen h-screen flex flex-col items-center p-1 gap-1">
     <div class="w-full flex justify-center border rounded shadow p-2">
-      <div class="grid grid-cols-3 gap-10 w-full max-w-xs">
+      <div class="grid grid-cols-3 gap-10 w-full max-w-sm">
         <button type="button" class="home border-neutral-200 p-2 hover:underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
           Home
         </button>
-        <button type="button" class="menu border-neutral-200 p-2 font-semibold underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
+        <button type="button" class="menu p-2 font-semibold underline underline-offset-4 decoration-4 decoration-orange-500 text-lg  bg-neutral-200 rounded shadow border border-neutral-200">
           Menu
         </button>
         <button type="button" class="contact border-neutral-200 p-2 hover:underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
@@ -63,14 +63,14 @@ const contact = (content) => {
   content.innerHTML = `
   <div class="w-screen h-screen flex flex-col items-center p-1 gap-1">
     <div class="w-full flex justify-center border rounded shadow p-2">
-      <div class="grid grid-cols-3 gap-10 w-full max-w-xs">
+      <div class="grid grid-cols-3 gap-10 w-full max-w-sm">
         <button type="button" class="home border-neutral-200 p-2 hover:underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
           Home
         </button>
         <button type="button" class="menu border-neutral-200 p-2 hover:underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
           Menu
         </button>
-        <button type="button" class="contact border-neutral-200 p-2 font-semibold underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
+        <button type="button" class="contact p-2 font-semibold underline underline-offset-4 decoration-4 decoration-orange-500 text-lg bg-neutral-200 rounded shadow border border-neutral-200">
           Contact
         </button>
       </div>
