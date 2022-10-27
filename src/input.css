@@ -5,3 +5,7 @@
 /* * {
   outline: 1px solid black
 } */
+
+body::-webkit-scrollbar {
+  display: none;
+}

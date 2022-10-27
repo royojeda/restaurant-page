@@ -27,4 +27,4 @@ class Display {
   }
 }
 
-Display.loadTab(home)
+Display.loadTab(menu)
