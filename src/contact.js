@@ -18,7 +18,7 @@ const contact = (content) => {
       </div>
 
       <div class="flex-1 w-full flex justify-center items-center p-4">
-        <div class="p-10 rounded-md shadow-xl border flex flex-col gap-10">
+        <div class="p-10 rounded-md shadow-xl border flex flex-col gap-10 max-w-lg">
           <div class="text-3xl font-medium border-orange-400 border-b-2">
             Get in touch!
           </div>
@@ -27,21 +27,25 @@ const contact = (content) => {
             <div>
               Email:
 
-              <a href="mailto:callcenter@shakeysdelivery.com.ph" class="text-orange-400 break-all">callcenter@shakeysdelivery.com.ph</a>
+              <a href="mailto:callcenter@shakeysdelivery.com.ph" class="text-orange-400 break-all hover:underline">callcenter@shakeysdelivery.com.ph</a>
             </div>
 
             <div>
               Telephone:
 
-              <span class="text-orange-400">
+              <span class="text-orange-400 hover:underline">
                 7777-7777
               </span>
 
               or
 
-              <span class="text-orange-400">
+              <span class="text-orange-400 hover:underline">
                 #77777
               </span>
+            </div>
+
+            <div class="text-sm italic mt-6 text-neutral-500">
+              This is not the Shakey's official website. The images and/or logos used here are from <a class="text-orange-400 hover:underline" href="https://www.shakeyspizza.ph/">https://www.shakeyspizza.ph/</a> and the company retains full ownership.
             </div>
           </div>
         </div>
