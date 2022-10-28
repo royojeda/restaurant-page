@@ -42,7 +42,7 @@ const home = (content) => {
 const menu = (content) => {
   content.innerHTML = `
   <div class="flex flex-col items-center">
-    <div class="flex justify-center border-b shadow p-2 absolute left-0 right-0 bg-white">
+    <div class="flex justify-center border-b shadow p-2 fixed left-0 right-0 bg-white">
       <div class="grid grid-cols-3 gap-10 w-full max-w-sm">
         <button type="button" class="home border-neutral-200 p-2 hover:underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
           Home
