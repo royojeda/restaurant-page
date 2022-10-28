@@ -17,8 +17,34 @@ const contact = (content) => {
         </div>
       </div>
 
-      <div class="flex-1 w-full">
+      <div class="flex-1 w-full flex justify-center items-center p-4">
+        <div class="p-10 rounded-md shadow-xl border flex flex-col gap-10">
+          <div class="text-3xl font-medium border-orange-400 border-b-2">
+            Get in touch!
+          </div>
 
+          <div class="flex flex-col gap-4 text-xl">
+            <div>
+              Email:
+
+              <a href="mailto:callcenter@shakeysdelivery.com.ph" class="text-orange-400 break-all">callcenter@shakeysdelivery.com.ph</a>
+            </div>
+
+            <div>
+              Telephone:
+
+              <span class="text-orange-400">
+                7777-7777
+              </span>
+
+              or
+
+              <span class="text-orange-400">
+                #77777
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   `

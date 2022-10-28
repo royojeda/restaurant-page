@@ -29,4 +29,4 @@ class Display {
   }
 }
 
-Display.loadTab(home)
+Display.loadTab(contact)
