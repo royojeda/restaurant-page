@@ -9,7 +9,7 @@ const home = (content) => {
   content.innerHTML = `
     <div class="w-screen h-screen flex flex-col items-center">
       <div class="w-full flex justify-center border-b shadow p-2">
-        <div class="grid grid-cols-3 gap-10 w-full max-w-sm">
+        <div class="grid grid-cols-3 gap-6 w-full max-w-sm">
           <button type="button" class="home p-2 font-semibold underline underline-offset-4 decoration-4 decoration-orange-500 text-lg bg-neutral-200 rounded shadow border border-neutral-200">
             Home
           </button>
@@ -43,13 +43,15 @@ const menu = (content) => {
   content.innerHTML = `
   <div class="flex flex-col items-center">
     <div class="flex justify-center border-b shadow p-2 fixed w-screen left-0 right-0 bg-white">
-      <div class="grid grid-cols-3 gap-10 w-full max-w-sm">
+      <div class="grid grid-cols-3 gap-6 w-full max-w-sm">
         <button type="button" class="home border-neutral-200 p-2 hover:underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
           Home
         </button>
+
         <button type="button" class="menu p-2 font-semibold underline underline-offset-4 decoration-4 decoration-orange-500 text-lg  bg-neutral-200 rounded shadow border border-neutral-200">
           Menu
         </button>
+
         <button type="button" class="contact border-neutral-200 p-2 hover:underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
           Contact
         </button>
@@ -58,6 +60,8 @@ const menu = (content) => {
 
     <div class="w-full tabContent flex flex-col gap-y-4 items-center p-4 mt-[4rem]">
       <div class="pizzaCardOne border shadow rounded-lg p-8 w-full max-w-4xl flex items-center flex-col sm:flex-row">
+        <img class="pizzaOneImage w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]">
+
         <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4">
           <div class="text-2xl font-medium underline decoration-red-400">
             Hi - Protein Supreme
@@ -70,6 +74,8 @@ const menu = (content) => {
       </div>
 
       <div class="pizzaCardTwo border shadow rounded-lg p-8 w-full max-w-4xl flex items-center flex-col sm:flex-row">
+        <img class="pizzaTwoImage w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]">
+
         <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4">
           <div class="text-2xl font-medium underline decoration-amber-400">
             Truffle Four Cheese
@@ -82,6 +88,8 @@ const menu = (content) => {
       </div>
 
       <div class="pizzaCardThree border shadow rounded-lg p-8 w-full max-w-4xl flex items-center flex-col sm:flex-row">
+        <img class="pizzaThreeImage w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]">
+
         <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4">
           <div class="text-2xl font-medium underline decoration-lime-400">
             Shakey's Special
@@ -94,6 +102,8 @@ const menu = (content) => {
       </div>
 
       <div class="pizzaCardFour border shadow rounded-lg p-8 w-full max-w-4xl flex items-center flex-col sm:flex-row">
+        <img class="pizzaFourImage w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]">
+
         <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4">
           <div class="text-2xl font-medium underline decoration-orange-400">
             Angus Steakhouse
@@ -108,32 +118,17 @@ const menu = (content) => {
   </div>
 `
 
-  const pizzaOneImage = document.createElement("img")
-  pizzaOneImage.src = pizzaOne
-  pizzaOneImage.className = "w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]"
-  document.querySelector(".pizzaCardOne").prepend(pizzaOneImage)
-
-  const pizzaTwoImage = document.createElement("img")
-  pizzaTwoImage.src = pizzaTwo
-  pizzaTwoImage.className = "w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]"
-  document.querySelector(".pizzaCardTwo").prepend(pizzaTwoImage)
-
-  const pizzaThreeImage = document.createElement("img")
-  pizzaThreeImage.src = pizzaThree
-  pizzaThreeImage.className = "w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]"
-  document.querySelector(".pizzaCardThree").prepend(pizzaThreeImage)
-
-  const pizzaFourImage = document.createElement("img")
-  pizzaFourImage.src = pizzaFour
-  pizzaFourImage.className = "w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]"
-  document.querySelector(".pizzaCardFour").prepend(pizzaFourImage)
+  document.querySelector(".pizzaOneImage").src = pizzaOne
+  document.querySelector(".pizzaTwoImage").src = pizzaTwo
+  document.querySelector(".pizzaThreeImage").src = pizzaThree
+  document.querySelector(".pizzaFourImage").src = pizzaFour
 }
 
 const contact = (content) => {
   content.innerHTML = `
   <div class="w-screen h-screen flex flex-col items-center">
     <div class="w-full flex justify-center border-b shadow p-2">
-      <div class="grid grid-cols-3 gap-10 w-full max-w-sm">
+      <div class="grid grid-cols-3 gap-6 w-full max-w-sm">
         <button type="button" class="home border-neutral-200 p-2 hover:underline underline-offset-4 decoration-4 decoration-orange-500 text-lg">
           Home
         </button>
