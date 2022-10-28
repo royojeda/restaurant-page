@@ -1,5 +1,7 @@
 import "./input.css"
-import { home, menu, contact } from "./tabs.js"
+import { home } from "./home.js"
+import { menu } from "./menu.js"
+import { contact } from "./contact.js"
 
 class Display {
   static setupButtons() {
