@@ -26,12 +26,12 @@ const menu = (content) => {
         <div class="pizzaCardOne border shadow rounded-lg p-8 w-full max-w-4xl flex items-center flex-col sm:flex-row">
           <img class="pizzaOneImage w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]">
 
-          <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4">
+          <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4 text-center sm:text-left">
             <div class="text-2xl font-medium underline decoration-red-400">
               Hi - Protein Supreme
             </div>
 
-            <div class="italic text-center sm:text-left">
+            <div class="italic">
               All-meat pizza with beef, salami, pepperoni, ham and Italian sausage. Topped with tangy ranch dressing.
             </div>
           </div>
@@ -40,12 +40,12 @@ const menu = (content) => {
         <div class="pizzaCardTwo border shadow rounded-lg p-8 w-full max-w-4xl flex items-center flex-col sm:flex-row">
           <img class="pizzaTwoImage w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]">
 
-          <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4">
+          <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4 text-center sm:text-left">
             <div class="text-2xl font-medium underline decoration-amber-400">
               Truffle Four Cheese
             </div>
 
-            <div class="italic text-center sm:text-left">
+            <div class="italic">
               Irresistibly rich and creamy pizza topped with four types of cheese: Mozzarella, Parmesan, Cheddar and Cream Cheese and drizzled with premium Truffle flavor!
             </div>
           </div>
@@ -54,12 +54,12 @@ const menu = (content) => {
         <div class="pizzaCardThree border shadow rounded-lg p-8 w-full max-w-4xl flex items-center flex-col sm:flex-row">
           <img class="pizzaThreeImage w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]">
 
-          <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4">
+          <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4 text-center sm:text-left">
             <div class="text-2xl font-medium underline decoration-lime-400">
               Shakey's Special
             </div>
 
-            <div class="italic text-center sm:text-left">
+            <div class="italic">
               Loaded with beef, Italian sausage, pepperoni, salami, mushrooms, green bell pepper, and onions.
             </div>
           </div>
@@ -68,12 +68,12 @@ const menu = (content) => {
         <div class="pizzaCardFour border shadow rounded-lg p-8 w-full max-w-4xl flex items-center flex-col sm:flex-row">
           <img class="pizzaFourImage w-full max-w-[20rem] sm:w-[30vw] sm:max-w-[20rem]">
 
-          <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4">
+          <div class="flex flex-col p-10 justify-center items-center sm:items-start gap-4 text-center sm:text-left">
             <div class="text-2xl font-medium underline decoration-orange-400">
               Angus Steakhouse
             </div>
 
-            <div class="italic text-center sm:text-left">
+            <div class="italic">
               Angus beef with roasted onions and mushrooms, topped with crunchy potato strings.
             </div>
           </div>
